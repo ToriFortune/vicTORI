@@ -1,17 +1,23 @@
-.jumbotron
-{
-  background-color: blueviolet;
-  text-align: center; font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-h1{
+.jumbotron{
+  background: blue;
+  text-align: center;
+  height: 3rem;
 }
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+.img-apple {
+  width: 150px;
+  height: 300px;
+}
+.img-banana{
+  width: 200px;
+  height: 300px; 
+}
 
-<button type="button" class="btn btn-link">Link</button>
+.img-pear{
+  width: 150px;
+  height: 300px; 
+}
+
+.img-peacg{
+  width: 150px;
+  height: 300px; 
+}
