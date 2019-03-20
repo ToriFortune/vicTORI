@@ -4,24 +4,31 @@
   height: 3rem;
 }
 .img-apple {
-  width: 150px;
+  position: relative;
+  width: 100%;
   height: 300px;
 }
 .img-banana{
+  position: relative;
   width: 200px;
   height: 300px; 
 }
 
 .img-pear{
+  position: relative;
   width: 150px;
   height: 300px; 
 }
-
-.img-peacg{
+.img-mango{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.img-peach{
+  position: relative;
   width: 150px;
   height: 300px; 
-}
-.body{
-  background-color: lightblue;
-  background-image: fruitbasket.jpg;
+}body {
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-color: #cccccc;
 }

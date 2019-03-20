@@ -31,28 +31,36 @@
 //   });
   
 
-alert("Welcome!");
-alert("The goal of the game is to count up to but not above 35, let's begin!");
-var fruitchoice = new Array ();
-var fruits =["img-apple", "img-banana", "img-peach", "img-pear"];
-var fruitvalues =["1","2", "3", "4", "5", "6", "7", "8", "9", "0"];
+// alert("Welcome!");
+// alert("We have selected a random number between 1 - 120. Let's if you can guess it!");
 
-function getfruitchoice()
-{
-  var fruitchoice = new Array();
-  for (var i=0; i< fruits.length; i++)
-  {   
+// //Math.floor(Math.random() * 100) + 1; 
+// var fruitchoice = new Array ();
+// var fruits =["img-apple", "img-banana", "img-peach", "img-pear"];
+// var fruitvalues =["1","2", "3", "4", "5", "6", "7", "8", "9", "0"];
+// var score=0
+// function getfruitchoice()
+// {
+//   var fruitchoice = new Array();
+//   for (var i=0; i< fruits.length; i++);
+//   {   
    
-  for (var x=0; x <fruitvalues.length; x++)
-  { 
-  var fruit = {FruitValue: fruitvalues[x], Fruits: fruits [i] };
-  fruitchoice.push (fruit);
-}
-}
-return fruit;
-}
-//we should have our array of fruit choices with forty fruit objects.
+//   for (var x=0; x <fruitvalues.length; x++);
+//   { 
+//   var fruit = {FruitValue: fruitvalues[x], Fruits: fruits [i] };
+//   fruitchoice.push (fruit);
+// }
+// }
+// return fruit;
+// }
+//we should have our array of fruit choices with forty fruit objects (fruits * fruitvalues).
 
-
-
-
+// a player should be able to click on a fruit and have a random number associated on click
+//different fruits will give different numbers which should continue to add up to 35
+//if a player clicks and the sum of random numbers is above 35, that player will have a message stating the game is over
+//
+var fruitChoice = new Array();
+var fruitOptions = ["apple", "banana", "peach", "cherry"];
+var FruitValues = ["1","2", "3", "4", "5", "6", "7", "8", "9", "0"];
+var score= 0;
+var targetNumber =87;
