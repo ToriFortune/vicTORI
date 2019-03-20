@@ -64,3 +64,35 @@ var fruitOptions = ["apple", "banana", "peach", "cherry"];
 var FruitValues = ["1","2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var score= 0;
 var targetNumber =87;
+totalFruitValue= 
+function getfruitchoice()
+{
+ //  var fruitchoice = new Array();
+//   for (var i=0; i< fruits.length; i++);
+  // console.log(fruitChoice);
+}
+$(document).ready(function() {
+
+   $("#clickapple").on("click", function() {
+    alert("You so many points");
+  });
+
+});
+$(document).ready(function() {
+  
+  $("#clickpeach").on("click", function() {
+    alert("You have ...points!");
+  });
+
+});
+$(document).ready(function() {
+$("#clickbanana").on("click", function() {
+  alert("You have ...points!");
+});
+});
+
+$(document).ready(function() {
+$("#clickcherry").on("click", function() {
+  alert("You have ...points!");
+});
+});

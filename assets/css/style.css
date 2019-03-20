@@ -1,8 +1,4 @@
-.jumbotron{
-  background: blue;
-  text-align: center;
-  height: 3rem;
-}
+
 .img-apple {
   position: relative;
   width: 100%;
@@ -28,7 +24,4 @@
   position: relative;
   width: 150px;
   height: 300px; 
-}body {
-  background-image: url("img_tree.gif"), url("paper.gif");
-  background-color: #cccccc;
 }
