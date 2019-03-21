@@ -18,7 +18,7 @@
 // var targetNumber = 87;
 // $("magic-number").text(targetNumber);
 // var counter = 0
-// var numberOptions = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+// var numberOptions = [12,11,10,9, 8, 7, 6, 5, 4, 3, 2, 1];
 // for (var i=0; i<numberOptions.length; i++)
 // var increment = numberOptions[Math.round(Math.random())];
 // $(".img apple").on("click", function() {
@@ -50,8 +50,8 @@
 
 
 //Thought process
-// a player should be able to click on a fruit and have a random number associated on click
-//upon each click, a player shhould be alerted to the points for each click event
+//a player should be able to click on a fruit and have a random number associated on click
+//upon each click, a player should be alerted to the points for each click event
 //each click should equal a random number
 //points awarded per click should continue to tally up to 87
 //players will get alert "You went over, try again" when summation of click points is over 87
@@ -59,26 +59,47 @@
 
 var fruitChoice = new Array();
 var fruitOptions = ["apple", "banana", "peach", "cherry"];
-var FruitValues = ["1","2", "3", "4", "5", "6", "7", "8", "9", "0"];
+var apple= 12;
+var banana= 10
+var peach= 8
+var cherry = 6
+var FruitValues = ["1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 var score= 0;
 var targetNumber =87;
-totalFruitValue= 
-function getfruitchoice()
-{
- //  var fruitchoice = new Array();
-//   for (var i=0; i< fruits.length; i++);
-  // console.log(fruitChoice);
-}
-$(document).ready(function(){
-  $("#clickapple").on("click", function (){
-    var random=Math.floor(Math.random() * (120-19) +1) +19;
-  })};
+var counter;
+var randomFruitSelection =
+
+
+// function getfruitchoice()
+// {
+//  //  var fruitchoice = new Array();
+// //   for (var i=0; i< fruits.length; i++);
+//   // console.log(fruitChoice);
+// }
+
+// var body =document.querySelector("body"); ----I was trying something unrelated out but it didn't work out
+// var isBlue = false;
+// setInterval(function(){
+//   if (isBlue){
+//     body.style.background = "blue";
+//       }
+//       else {
+//         body.style.background ="#3498db";
+//       }
+//       isBlue =!isBlue;
+// }, 1000);
+// var y = (FruitValues + counter)
+ 
+// //function is equal to 87
+// function isEqual (targetNumber){
+  
+
 
 
 $(document).ready(function() {
 
    $("#clickapple").on("click", function() {
-    alert("You have 'so many' points");
+    alert("You have + 'so many' + points");
   });
 
 });
@@ -100,3 +121,10 @@ $("#clickcherry").on("click", function() {
   alert("You have 'so many' points!");
 });
 });
+// if (fruitChoices === targetNumber)
+// return true;
+// }
+// else{
+//   return false;
+// }
+// 
