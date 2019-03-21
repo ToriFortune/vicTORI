@@ -93,9 +93,6 @@ var randomFruitSelection =
 // //function is equal to 87
 // function isEqual (targetNumber){
   
-
-
-
 $(document).ready(function() {
 
    $("#clickapple").on("click", function() {
