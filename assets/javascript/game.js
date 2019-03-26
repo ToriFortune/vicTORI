@@ -57,19 +57,46 @@
 //players will get alert "You went over, try again" when summation of click points is over 87
 //game should reset upon player losing without refreshing
 
-var fruitChoice = new Array();
-var fruitOptions = ["apple", "banana", "peach", "cherry"];
-var apple= 12;
-var banana= 10
-var peach= 8
-var cherry = 6
-var FruitValues = ["1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+// var fruitChoice = new Array();
+var fruitOptions = [
+  {name: "apple", value:0 }, 
+  {name: "banana", value:0}, 
+  {name: "peach", value:0},
+  {name: "cherry", value:0}
+];
+// var apple= 12;
+// var banana= 10
+// var peach= 8
+// var cherry = 6
+// var FruitValues = ["1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 var score= 0;
 var targetNumber =87;
-var counter;
-var randomFruitSelection =
+// var counter;
+// var randomFruitSelection =
 
+function getRandomNumber() {
+ return Math.floor(Math.random() * 12) + 1; 
+}
 
+function startGame() {
+  score=0; 
+  $("#magic-number").text(score);
+  for (var i= 0; i< fruitOptions.length; i++){
+    fruitOptions[i].value =getRandomNumber();
+  }
+}
+
+function checkTargetNumber () {
+  if (score===targetNumber){
+    alert("You win!");
+    startGame();
+  }
+  else if (score > targetNumber){
+    alert("Try again!")
+    startGame();
+  }
+
+}
 // function getfruitchoice()
 // {
 //  //  var fruitchoice = new Array();
@@ -94,30 +121,38 @@ var randomFruitSelection =
 // function isEqual (targetNumber){
   
 $(document).ready(function() {
+  startGame();
 
-   $("#clickapple").on("click", function() {
-    alert("You have + 'so many' + points");
+   $(".btn").on("click", function() {
+    var fruit = $(this).attr("id");
+    for (var i= 0; i< fruitOptions.length; i++){
+      if(fruitOptions[i].name === fruit){
+        score += fruitOptions[i].value;
+        $("#magic-number").text(score);  
+        checkTargetNumber();
+      }
+    }
   });
 
 });
-$(document).ready(function() {
+// $(document).ready(function() {
   
-  $("#clickpeach").on("click", function() {
-    alert("You have 'so many' points!");
-  });
+//   $("#clickpeach").on("click", function() {
+//     alert("You have 'so many' points!");
+//   });
 
-});
-$(document).ready(function() {
-$("#clickbanana").on("click", function() {
-  alert("You have 'so many' points!");
-});
-});
+// });
+// $(document).ready(function() {
+// $("#clickbanana").on("click", function() {
+//   alert("You have 'so many' points!");
+// });
+// });
 
-$(document).ready(function() {
-$("#clickcherry").on("click", function() {
-  alert("You have 'so many' points!");
-});
-});
+// $(document).ready(function() {
+// $("#clickcherry").on("click", function() {
+//   alert("You have 'so many' points!");
+// });
+// });
 // if (fruitChoices === targetNumber)
 // return true;
 // }
